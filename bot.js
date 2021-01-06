@@ -101,14 +101,14 @@ client.login(ayarlar.token);
 client.on('ready', () => {
     client.user.setPresence({
         game: {
-            name: `!botekle Discord BotList`,
+            name: `!botekle Yuno Botlist`,
             type: 'WATCHING'
             // Değerler:
             // PLAYING: Oynuyor
             // WATCHING: İzliyor
             // LISTENING: Dinliyor
         },
-        status: 'online'
+        status: 'dnd'
         // Değerler:
         // online: Çevrimiçi
         // dnd: Rahatsız Etmeyin

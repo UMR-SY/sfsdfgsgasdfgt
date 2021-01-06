@@ -7,8 +7,6 @@ exports.run = function(client, message, args) {
 	let lrowsisim = args[0]
   let sahip = args[1]
 	let log = "796266435160703017" // bot eklendi / onaylandı / reddedildi kanalı
-	.setColor("GREEN")
-  .setTitle("Onaylandı")
 	if (!lrowsisim) return message.channel.send(`:no_entry: Botun idsini yazmalısın.`).then(msg => msg.delete(10000))
   message.delete()
   client.channels.get(log).send(`:white_check_mark: <@${sahip}> adlı kişinin <@${lrowsisim}> adlı botu onaylandı.`);
